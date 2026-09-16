@@ -160,4 +160,24 @@ nav {
 .serving-icon {
   color: #2b7fff;
 }
+
+.cooking-method {
+  background-color: #dbfce7;
+  color: #008236;
+}
+
+.cusine {
+  background-color: #dbeafe;
+  color: #2c5be9;
+}
+
+.sharing-links-icon1,
+.sharing-links-icon2 {
+  color: #f54900;
+  background-color: #ffedd4;
+}
+.sharing-links-icon1:hover,
+.sharing-links-icon2:hover {
+  background-color: #ffd6a7;
+}
 /* =================== End main Section================*/
