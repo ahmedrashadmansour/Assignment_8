@@ -32,7 +32,7 @@
   }
 }
 @media (min-width: 768px) {
-  .nav-link {
+  nav .nav-link {
     display: none;
   }
   .nav-item span {
@@ -46,7 +46,8 @@
     border-bottom-left-radius: 30px !important;
   }
 
-  .img-wrapper-bigger {
+  .img-wrapper-bigger,
+  .content-of-meals {
     max-height: 120vh;
   }
   .content-info {

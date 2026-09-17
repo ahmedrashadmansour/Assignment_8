@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- fontawsome -->
-    <link rel="stylesheet" href="css/fontawsome.css" />
+    <!-- <link rel="stylesheet" href="css/fontawsome.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <!-- boostrab -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- css -->
     <link rel="stylesheet" href="css/index.css" />
     <!-- media -->
@@ -92,7 +94,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-7 bg-white">
+            <div class="col-12 col-lg-7 bg-white overflow-y-scroll content-of-meals">
               <div class="inner">
                 <div class="content-info p-5">
                   <div class="all-tags">
@@ -105,8 +107,267 @@
                       <span class="d-block sharing-links-icon1 p-3 rounded-4"><i class="fa-solid fa-bookmark"></i></span
                       ><span class="d-block sharing-links-icon2 p-3 rounded-4"><i class="fa-solid fa-share-nodes"></i></span>
                     </div>
-                    <p class="font-18">Rich and creamy Indian curry with tender chicken pieces</p>
+                    <p class="font-18 text-muted">Rich and creamy Indian curry with tender chicken pieces</p>
                   </header>
+                  <!-- nav and tabs -->
+                  <div class="pt-5">
+                    <ul class="nav nav-tabs justify-content-center fs-6 fw-semibold" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active py-3 px-4 text-muted"
+                          id="home-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#home-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="home-tab-pane"
+                          aria-selected="true">
+                          <span class="me-2 fs-5"><i class="fa-solid fa-list-check"></i></span>
+                          Ingredients
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link py-3 px-4 text-muted"
+                          id="profile-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#profile-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="profile-tab-pane"
+                          aria-selected="false">
+                          <span class="me-2 fs-5"><i class="fa-brands fa-readme"></i></span>
+                          Instructions
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link py-3 px-4 text-muted"
+                          id="contact-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#contact-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="contact-tab-pane"
+                          aria-selected="false">
+                          <span class="me-2 fs-5"><i class="fa-solid fa-chart-pie"></i></span>
+                          Nutrition
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link py-3 px-4 text-muted"
+                          id="investing-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#investing-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="investing-tab-pane"
+                          aria-selected="false">
+                          <span class="me-2 fs-5"><i class="fa-solid fa-lightbulb"></i></span>
+                          Chef's Tips
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content overflow-y-scroll" id="myTabContent">
+                      <!-- 1st page -->
+                      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <div class="container pt-5">
+                          <div class="d-flex">
+                            <span class="me-4 text number-of-ingredients d-flex justify-content-center align-items-center fw-bold font-14"
+                              >1</span
+                            >
+                            <p>2 tablespoons green curry paste</p>
+                          </div>
+                          <div class="d-flex">
+                            <span class="me-4 number-of-ingredients d-flex justify-content-center align-items-center fw-bold font-14"
+                              >2</span
+                            >
+                            <p>400ml coconut milk</p>
+                          </div>
+                          <div class="d-flex">
+                            <span class="me-4 number-of-ingredients d-flex justify-content-center align-items-center fw-bold font-14"
+                              >3</span
+                            >
+                            <p>300g chicken breast, sliced</p>
+                          </div>
+                          <div class="d-flex">
+                            <span class="me-4 text number-of-ingredients d-flex justify-content-center align-items-center fw-bold font-14"
+                              >4</span
+                            >
+                            <p>1 red bell pepper, sliced</p>
+                          </div>
+                          <div class="d-flex">
+                            <span class="me-4 number-of-ingredients d-flex justify-content-center align-items-center fw-bold font-14"
+                              >5</span
+                            >
+                            <p>100g green beans</p>
+                          </div>
+                          <div class="d-flex">
+                            <span class="me-4 text number-of-ingredients d-flex justify-content-center align-items-center fw-bold font-14"
+                              >6</span
+                            >
+                            <p>1 eggplant, cubed</p>
+                          </div>
+                          <div class="d-flex">
+                            <span class="me-4 number-of-ingredients d-flex justify-content-center align-items-center fw-bold font-14"
+                              >7</span
+                            >
+                            <p>2 tablespoons fish sauce</p>
+                          </div>
+                          <div class="d-flex">
+                            <span class="me-4 text number-of-ingredients d-flex justify-content-center align-items-center fw-bold font-14"
+                              >8</span
+                            >
+                            <p>1 tablespoon palm sugar</p>
+                          </div>
+                          <div class="d-flex">
+                            <span class="me-4 number-of-ingredients d-flex justify-content-center align-items-center fw-bold font-14"
+                              >9</span
+                            >
+                            <p>Fresh Thai basil leaves</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 2nd page -->
+                      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="pt-5">
+                          <div class="d-flex">
+                            <span class="me-4 number-of-instruction d-flex justify-content-center align-items-center fw-bold fs-4">1</span>
+                            <p>Heat a large pot or wok over medium heat. Add curry paste and cook for 1 minute until fragrant.</p>
+                          </div>
+                          <div class="d-flex">
+                            <span class="me-4 number-of-instruction d-flex justify-content-center align-items-center fw-bold fs-4">2</span>
+                            <p>Add half the coconut milk and stir to combine with the curry paste.</p>
+                          </div>
+                          <div class="d-flex">
+                            <span class="me-4 number-of-instruction d-flex justify-content-center align-items-center fw-bold fs-4">3</span>
+                            <p>Add sliced chicken and cook until no longer pink, about 5 minutes.</p>
+                          </div>
+                          <div class="d-flex">
+                            <span class="me-4 text number-of-instruction d-flex justify-content-center align-items-center fw-bold fs-4"
+                              >4</span
+                            >
+                            <p>Add remaining coconut milk, vegetables, fish sauce, and palm sugar.</p>
+                          </div>
+                          <div class="d-flex">
+                            <span class="me-4 number-of-instruction d-flex justify-content-center align-items-center fw-bold fs-4">5</span>
+                            <p>Simmer for 15-20 minutes until vegetables are tender and sauce has thickened.</p>
+                          </div>
+                          <div class="d-flex">
+                            <span class="me-4 text number-of-instruction d-flex justify-content-center align-items-center fw-bold fs-4"
+                              >6</span
+                            >
+                            <p>Stir in fresh Thai basil leaves. Serve hot with jasmine rice.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 3rd page -->
+                      <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        <div class="container pt-5">
+                          <div class="row">
+                            <div class="col-12 col-lg-6">
+                              <div class="inner">
+                                <div class="calories d-flex justify-content-between icon-bg rounded-4 my-3 p-4">
+                                  <div class="icon">
+                                    <span class="me-3 calories-icon px-3 py-2 rounded-3"><i class="fa-solid fa-fire"></i></span>
+                                    <span class="fs-5 fw-medium text-muted">Calories</span>
+                                  </div>
+                                  <div class="value fs-5 fw-bold"><p>620 Kcal</p></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="inner">
+                                <div class="Protein d-flex justify-content-between icon-bg rounded-4 my-3 p-4">
+                                  <div class="icon">
+                                    <span class="me-3 protein-icon px-3 py-2 rounded-3"><i class="fa-solid fa-dumbbell"></i></span>
+                                    <span class="fs-5 fw-medium text-muted">Protein</span>
+                                  </div>
+                                  <div class="value fs-5 fw-bold"><p>48 G</p></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="inner">
+                                <div class="carb d-flex justify-content-between icon-bg rounded-4 my-3 p-4">
+                                  <div class="icon">
+                                    <span class="me-3 carb-icon px-3 py-2 rounded-3"><i class="fa-solid fa-wheat-awn"></i></span>
+                                    <span class="fs-5 fw-medium text-muted">Carbohydrates</span>
+                                  </div>
+                                  <div class="value fs-5 fw-bold"><p>52 G</p></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="inner">
+                                <div class="carb d-flex justify-content-between icon-bg rounded-4 my-3 p-4">
+                                  <div class="icon">
+                                    <span class="me-3 fat-icon px-3 py-2 rounded-3"><i class="fa-solid fa-droplet"></i></span>
+                                    <span class="fs-5 fw-medium text-muted">Fat</span>
+                                  </div>
+                                  <div class="value fs-5 fw-bold"><p>22 G</p></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="inner">
+                                <div class="carb d-flex justify-content-between icon-bg rounded-4 my-3 p-4">
+                                  <div class="icon">
+                                    <span class="me-3 fiber-icon px-3 py-2 rounded-3"><i class="fa-brands fa-pagelines"></i></span>
+                                    <span class="fs-5 fw-medium text-muted">Fat</span>
+                                  </div>
+                                  <div class="value fs-5 fw-bold"><p>22 G</p></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="inner">
+                                <div class="inner">
+                                  <div class="carb d-flex justify-content-between icon-bg rounded-4 my-3 p-4">
+                                    <div class="icon">
+                                      <span class="me-3 Sodiom-icon px-3 py-2 rounded-3"><i class="fa-solid fa-cube"></i></span>
+                                      <span class="fs-5 fw-medium text-muted">Sodium</span>
+                                    </div>
+                                    <div class="value fs-5 fw-bold"><p>1180 MG</p></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 4th page -->
+                      <div class="tab-pane fade" id="investing-tab-pane" role="tabpanel" aria-labelledby="investing-tab" tabindex="0">
+                        <div class="tip pt-5">
+                          <div class="chef-tip d-flex align-items-center p-4 rounded-4 mb-4">
+                            <span class="d-block me-3 fs-4"><i class="fa-solid fa-circle-check"></i></span>
+                            <p class="m-0">Use room temperature eggs for a smoother sauce consistency</p>
+                          </div>
+                          <div class="chef-tip d-flex align-items-center p-4 rounded-4 mb-4">
+                            <span class="d-block me-3 fs-4"><i class="fa-solid fa-circle-check"></i></span>
+                            <p class="m-0">Work quickly when mixing eggs with hot pasta to avoid scrambling</p>
+                          </div>
+                          <div class="chef-tip d-flex align-items-center p-4 rounded-4 mb-4">
+                            <span class="d-block me-3 fs-4"><i class="fa-solid fa-circle-check"></i></span>
+                            <p class="m-0">Reserve extra pasta water - it's the secret to perfect creaminess</p>
+                          </div>
+                          <div class="chef-tip d-flex align-items-center p-4 rounded-4 mb-4">
+                            <span class="d-block me-3 fs-4"><i class="fa-solid fa-circle-check"></i></span>
+                            <p class="m-0">Freshly grated cheese makes all the difference in flavor</p>
+                          </div>
+                          <div class="chef-tip d-flex align-items-center p-4 rounded-4 mb-4">
+                            <span class="d-block me-3 fs-4"><i class="fa-solid fa-circle-check"></i></span>
+                            <p class="m-0">Never add cream - authentic carbonara is made with eggs only</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- button -->
+                  <button class="change-recipe-btn btn py-3 px-4 rounded-4 text-white mt-4 fw-semibold font-18" type="button">
+                    <span class="me-3"><i class="fa-solid fa-arrows-rotate"></i></span>Try Another Reciepe
+                  </button>
                 </div>
               </div>
             </div>
@@ -116,7 +377,8 @@
     </main>
 
     <!--  js files -->
-    <script src="js/bootstrap.js"></script>
+    <!-- <script src="js/bootstrap.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

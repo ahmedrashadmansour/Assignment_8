@@ -14,7 +14,6 @@ body {
 
 body {
   position: relative;
-  /* font-family: sans-serif, "Exo" !important; */
   overflow-x: hidden;
 }
 
@@ -179,5 +178,101 @@ nav {
 .sharing-links-icon1:hover,
 .sharing-links-icon2:hover {
   background-color: #ffd6a7;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  /* color: var(--bs-nav-tabs-link-active-color); */
+  /* background-color: var(--bs-nav-tabs-link-active-bg); */
+  /* border-color: var(--bs-nav-tabs-link-active-border-color); */
+  border: none !important;
+  padding-bottom: 20px;
+}
+
+.nav-tabs .nav-link:focus {
+  isolation: isolate;
+  /* border: none !important; */
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:focus span {
+  color: var(--bg-main-color-orange) !important;
+  border-bottom: 2px solid var(--bg-main-color-orange) !important;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:hover span {
+  /* color: var(--bg-main-color-orange) !important; */
+  /* border: none !important; */
+}
+
+.number-of-ingredients {
+  background-color: #ff6900;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-block: 10px;
+  text-align: center;
+  transform: translateY(-35%) !important;
+  color: white;
+}
+.number-of-instruction {
+  background-color: #ff6900;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-block: 10px;
+  text-align: center;
+  transform: translateY(-35%) !important;
+  color: white;
+}
+
+.icon-bg {
+  background-color: #f9fafb;
+}
+
+.calories-icon {
+  background-color: #ffedd4;
+  color: #f54900;
+}
+
+.protein-icon {
+  color: #155dfc;
+  background-color: #dbeafe;
+}
+.carb-icon {
+  color: #d08700;
+  background-color: #fef9c2;
+}
+
+.fat-icon {
+  color: #e7000b;
+  background-color: #ffe2e2;
+}
+
+.fiber-icon {
+  color: #00a63e;
+  background-color: #dbfce7;
+}
+
+.Sodiom-icon {
+  color: #e60076;
+  background-color: #fce7f3;
+}
+.chef-tip span {
+  color: #e17100;
+}
+.chef-tip {
+  background-color: #fffbeb;
+  border-left: 5px solid #ffb900;
+}
+
+.change-recipe-btn {
+  background: linear-gradient(to right, #ff6900 50%, #fb2c36);
+  transition: transform 0.3s;
+}
+
+.change-recipe-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #f54800 50%, #e70008) !important;
 }
 /* =================== End main Section================*/
