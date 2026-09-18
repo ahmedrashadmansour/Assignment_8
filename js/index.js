@@ -268,7 +268,7 @@ var allMeals = [
   },
 ];
 
-var lastIndex = null;
+var lastIndex = 0;
 
 function getDifferentRandomNumber() {
   var newIndex;
@@ -338,64 +338,64 @@ function changeMeal() {
                       </header>
                       <!-- nav and tabs -->
                       <div class="pt-1 nav-tab-comp">
-                        <ul class="nav nav-tabs justify-content-center fs-6 fw-semibold flex-nowrap" id="myTab" role="tablist">
-                          <li class="nav-item" role="presentation">
-                            <button
-                              class="nav-link active py-3 px-4 text-muted"
-                              id="home-tab"
-                              data-bs-toggle="tab"
-                              data-bs-target="#home-tab-pane"
-                              type="button"
-                              role="tab"
-                              aria-controls="home-tab-pane"
-                              aria-selected="true">
-                              <span class="fs-5"><i class="fa-solid fa-list-check"></i></span>
-                              Ingredients
-                            </button>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <button
-                              class="nav-link py-3 px-4 text-muted"
-                              id="profile-tab"
-                              data-bs-toggle="tab"
-                              data-bs-target="#profile-tab-pane"
-                              type="button"
-                              role="tab"
-                              aria-controls="profile-tab-pane"
-                              aria-selected="false">
-                              <span class="fs-5"><i class="fa-brands fa-readme"></i></span>
-                              Instructions
-                            </button>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <button
-                              class="nav-link py-3 px-4 text-muted"
-                              id="contact-tab"
-                              data-bs-toggle="tab"
-                              data-bs-target="#contact-tab-pane"
-                              type="button"
-                              role="tab"
-                              aria-controls="contact-tab-pane"
-                              aria-selected="false">
-                              <span class="fs-5"><i class="fa-solid fa-chart-pie"></i></span>
-                              Nutrition
-                            </button>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <button
-                              class="nav-link py-3 px-4 text-muted"
-                              id="investing-tab"
-                              data-bs-toggle="tab"
-                              data-bs-target="#investing-tab-pane"
-                              type="button"
-                              role="tab"
-                              aria-controls="investing-tab-pane"
-                              aria-selected="false">
-                              <span class="fs-5"><i class="fa-solid fa-lightbulb"></i></span>
-                              Chef's Tips
-                            </button>
-                          </li>
-                        </ul>
+                    <ul class="nav nav-tabs fw-semibold flex-nowrap" id="myTab" role="tablist">
+                      <li class="nav-item m-0 pt-1" role="presentation">
+                        <button
+                          class="nav-link d-flex text-muted align-items-center m-0 pt-0"
+                          id="home-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#home-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="home-tab-pane"
+                          aria-selected="true">
+                          <span class="fs-5 me-1"><i class="fa-solid fa-list-check"></i></span>
+                          Ingredients
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link d-flex text-muted"
+                          id="profile-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#profile-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="profile-tab-pane"
+                          aria-selected="false">
+                          <span class="fs-5 me-1"><i class="fa-brands fa-readme"></i></span>
+                          Instructions
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link d-flex text-muted"
+                          id="contact-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#contact-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="contact-tab-pane"
+                          aria-selected="false">
+                          <span class="fs-5 me-1"><i class="fa-solid fa-chart-pie"></i></span>
+                          Nutrition
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link d-flex text-muted"
+                          id="investing-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#investing-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="investing-tab-pane"
+                          aria-selected="false">
+                          <span class="fs-5 me-1"><i class="fa-solid fa-lightbulb"></i></span>
+                          Chef Tips
+                        </button>
+                      </li>
+                    </ul>
                         <div class="tab-content" id="myTabContent">
                           <!-- 1st page -->
                           <div
