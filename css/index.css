@@ -129,9 +129,105 @@ nav {
 
 /* =================== Start main Section ================*/
 
+#myTabContent .tab-pane::-webkit-scrollbar,
+.content-of-meals::-webkit-scrollbar {
+  width: 6px;
+}
+
+#myTabContent .tab-pane::-webkit-scrollbar-thumb,
+.content-of-meals::-webkit-scrollbar-thumb {
+  background: #ffdbd2;
+  border-radius: 10px;
+}
+
 .main-section {
+  display: flex;
+  align-items: stretch;
+}
+.main-bg {
   background-color: var(--section-bg-color);
 }
+
+.main-section .col-lg-5,
+.main-section .col-lg-5 .inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.main-section .col-lg-5,
+.main-section .col-lg-7 {
+  height: 100%;
+}
+
+.main-section .row {
+  height: 80vh;
+  min-height: 650px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  overflow-x: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.img-wrapper-bigger {
+  /* flex-grow: 1; */
+  height: 100% !important;
+  /* border-radius: 1rem 0 0 1rem; */
+  /* overflow: hidden; */
+  position: relative;
+}
+
+#myTabContent .row {
+  height: auto !important;
+  min-height: 0 !important;
+  align-items: flex-start !important;
+
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+  padding-bottom: 2rem;
+}
+
+.nutrition-tab,
+.instruction-tab {
+  max-height: 65vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.img-wrapper-bigger img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+.meal-desc-wrapper {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 95%;
+  margin: 0;
+  /* border-radius: rem; */
+}
+.meal-description {
+  background-color: #fbf9f6;
+}
+
+.main-section {
+}
+
+.content-of-meals {
+  height: 100%;
+  overflow-y: auto !important;
+  overflow-x: hidden;
+}
+/* 
+.nav-tab-comp {
+  height: 100%;
+  overflow-y: auto !important;
+  overflow-x: hidden;
+} */
+/* ====== */
 .reviews-pill {
   width: 12rem;
   position: absolute;
@@ -141,13 +237,6 @@ nav {
 
 .golden-star {
   color: #fdc700;
-}
-
-.meal-desc-wrapper {
-  width: 80%;
-  bottom: 2rem;
-  left: 3rem;
-  background-color: #fbf9f6;
 }
 
 .prep-time-icon {
@@ -174,6 +263,8 @@ nav {
 .sharing-links-icon2 {
   color: #f54900;
   background-color: #ffedd4;
+  padding-block: 0.9rem;
+  padding-inline: 1.2rem;
 }
 .sharing-links-icon1:hover,
 .sharing-links-icon2:hover {
@@ -188,27 +279,36 @@ nav {
   border: none !important;
   padding-bottom: 20px;
 }
+/* 
+.nav-tabs .tab-pane .ingredients {
+  height: 50%;
+  overflow-y: scroll;
+} */
+
+/* ======== */
 
 .nav-tabs .nav-link:focus {
   isolation: isolate;
   /* border: none !important; */
 }
+.nav-tabs .nav-link:focus {
+  border-bottom: 2px solid var(--bg-main-color-orange) !important;
+}
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:focus span {
   color: var(--bg-main-color-orange) !important;
-  border-bottom: 2px solid var(--bg-main-color-orange) !important;
 }
 
-.nav-tabs .nav-link:hover,
+/* .nav-tabs .nav-link:hover,
 .nav-tabs .nav-link:hover span {
-  /* color: var(--bg-main-color-orange) !important; */
-  /* border: none !important; */
-}
+  color: var(--bg-main-color-orange) !important;
+  border: none !important;
+} */
 
 .number-of-ingredients {
   background-color: #ff6900;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   margin-block: 10px;
   text-align: center;
@@ -270,9 +370,20 @@ nav {
   background: linear-gradient(to right, #ff6900 50%, #fb2c36);
   transition: transform 0.3s;
 }
+.button-wrapper {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 50px !important;
+}
 
 .change-recipe-btn:hover {
   transform: scale(1.05);
   background: linear-gradient(to right, #f54800 50%, #e70008) !important;
+}
+
+.nutrition-row {
+  --bs-gutter-x: 2rem !important; /* horizontal gap */
+  --bs-gutter-y: 3rem !important; /* vertical gap */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 /* =================== End main Section================*/
