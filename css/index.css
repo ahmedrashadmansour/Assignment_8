@@ -213,9 +213,6 @@ nav {
   background-color: #fbf9f6;
 }
 
-.main-section {
-}
-
 .content-of-meals {
   height: 100%;
   overflow-y: auto !important;
@@ -305,6 +302,15 @@ nav {
   border: none !important;
 } */
 
+.nav-item:first-child {
+  border-top: none !important;
+  padding-top: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.home-tab {
+  margin: 0 !important;
+}
 .number-of-ingredients {
   background-color: #ff6900;
   width: 30px;
